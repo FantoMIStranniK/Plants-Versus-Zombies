@@ -1,25 +1,35 @@
-using System;
-using Unity.Mathematics;
+using UnityEngine;
+using Sirenix.OdinInspector;
 
 namespace PVZ.Grid
 {
     public enum TileState : sbyte
     {
-        Occupied = 1,
         Vacant = 0,
+        Occupied = 1,
     }
 
-    [Serializable]
-    public struct Tile
+    public class Tile : SerializedMonoBehaviour
     {
-        public TileState State;
+        [field: SerializeField] public TileState State { get; private set; } = TileState.Vacant;
 
-        public float2 TileCenter;
+        [PreviewField(ObjectFieldAlignment.Center)]
+        [SceneObjectsOnly]
+        [field: Space]
+        [field: SerializeField] public GameObject CurrentPlant { get; private set; } = null;
 
-        public Tile(TileState state, float2 tileCenter)
+        public void SetPlant(GameObject plant)
         {
-            State = state;
-            TileCenter = tileCenter;
+            CurrentPlant = plant;
+
+            State = TileState.Occupied;
+        }
+
+        public void ClearPlant()
+        {
+            Destroy(CurrentPlant);
+
+            State = TileState.Occupied;
         }
     }
 }
