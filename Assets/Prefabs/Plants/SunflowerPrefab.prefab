@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6062543729770414610}
   - component: {fileID: 5756680272167463086}
+  - component: {fileID: 741922531041533551}
   m_Layer: 0
   m_Name: SunflowerPrefab
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4034691127823440328}
@@ -55,6 +56,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.25, y: 2, z: 1.25}
   m_Center: {x: 0, y: 0.85, z: 0}
+--- !u!114 &741922531041533551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299727695506437438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8e34352c186c845843c1e7b46e13cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBeforeStart: 2
+  timeBeforeIterations: 6
+  addPointsEffect: {fileID: 11400000, guid: 1a3e8698bb96bad48b5689f12657f7e3, type: 2}
 --- !u!1 &556218971039181864
 GameObject:
   m_ObjectHideFlags: 0
