@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3299043184712458310}
   - component: {fileID: 1545893168516096725}
   - component: {fileID: 2002334045323680923}
+  - component: {fileID: 3577444568173196701}
   m_Layer: 0
   m_Name: PlantSelectionPanel
   m_TagString: Untagged
@@ -82,16 +83,16 @@ MonoBehaviour:
         Type: 0
     Padding:
       Left:
-        Raw: 0
+        Raw: 13
         Type: 0
       Right:
-        Raw: 0
+        Raw: 13
         Type: 0
       Bottom:
-        Raw: 0
+        Raw: 13
         Type: 0
       Top:
-        Raw: 0
+        Raw: 13
         Type: 0
       Front:
         Raw: 0
@@ -188,9 +189,9 @@ MonoBehaviour:
     AspectRatio: {x: 0, y: 0, z: 0}
     AspectRatioAxis: 0
   autoLayout:
-    Axis: 0
+    Axis: 1
     Spacing:
-      Raw: 0
+      Raw: 10
       Type: 0
     SpacingMinMax:
       Min: 0
@@ -292,6 +293,22 @@ MonoBehaviour:
     FillEnabled: 1
   texture: {fileID: 0}
   sprite: {fileID: 0}
+--- !u!114 &3577444568173196701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758740002437375018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23569ec8e3ccb44f93ff9101c870fcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listItemPrefabs:
+  - {fileID: 492960671762421741, guid: 50ea484475dd7b8499d3c83d8998fe50, type: 3}
+  outOfViewDistance: 0
+  _uiBlock: {fileID: 0}
 --- !u!1 &910909843714176724
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +908,7 @@ GameObject:
   - component: {fileID: 5795283055358108065}
   - component: {fileID: 7771570844008140542}
   - component: {fileID: 7346106643071451044}
+  - component: {fileID: 7036730758139911720}
   m_Layer: 0
   m_Name: UI_Canvas
   m_TagString: Untagged
@@ -907,7 +925,7 @@ Transform:
   m_GameObject: {fileID: 4066781422502737392}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 90}
   m_LocalScale: {x: 0.101616964, y: 0.101616964, z: 0.101616964}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1138,6 +1156,20 @@ MonoBehaviour:
   planeDistance: 100
   haveConfiguredSortGroup: 1
   additionalCameras: []
+--- !u!114 &7036730758139911720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066781422502737392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470df9c8243e2944da0269f4b04d3108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Root: {fileID: 5795283055358108065}
+  PlantCardsView: {fileID: 3577444568173196701}
 --- !u!1 &6496189695916760681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,7 +1854,7 @@ Transform:
   m_GameObject: {fileID: 7078899067281234320}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 13.97, z: 0}
+  m_LocalPosition: {x: 0, y: 13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1871,7 +1903,7 @@ MonoBehaviour:
         Raw: 0
         Type: 0
       Y:
-        Raw: 13.97
+        Raw: 13
         Type: 0
       Z:
         Raw: 0
