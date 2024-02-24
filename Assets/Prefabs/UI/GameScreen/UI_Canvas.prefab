@@ -1183,6 +1183,7 @@ GameObject:
   - component: {fileID: 8149071702231647799}
   - component: {fileID: 3875679088239974596}
   - component: {fileID: 4283561878645032699}
+  - component: {fileID: 907084387027732106}
   m_Layer: 0
   m_Name: SunCountText
   m_TagString: Untagged
@@ -1533,6 +1534,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 3963738406050516747}
   m_maskType: 0
+--- !u!114 &907084387027732106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6496189695916760681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b94a49c0dd67fc4d8051da49f0d7832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attribute: {fileID: 11400000, guid: ea8ff69f48bb3594c81c20b2e48161c5, type: 2}
+  textBlock: {fileID: 3875679088239974596}
 --- !u!1 &6728346594027733705
 GameObject:
   m_ObjectHideFlags: 0

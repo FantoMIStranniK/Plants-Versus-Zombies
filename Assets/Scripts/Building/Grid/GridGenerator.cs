@@ -51,7 +51,7 @@ namespace PVZ.Grid
             {
                 for (uint j = 0; j < GridWidth; j++)
                 {
-                    var tile = Instantiate(tilePrefab, new Vector3(currentPoint.x, 0, currentPoint.y), quaternion.identity, transform);
+                    var tile = Instantiate(tilePrefab, new Vector3(currentPoint.x, 0, currentPoint.y), quaternion.identity, gameObject.transform);
 
                     tile.GetComponent<MeshRenderer>().material = isEven ? evenTileMaterial : oddTileMaterial;
 
