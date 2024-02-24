@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attributeSystem: {fileID: 8489340025601290960}
-  Level: 1
+  Level: 0
 --- !u!114 &6594307743047592102
 MonoBehaviour:
   m_ObjectHideFlags: 0

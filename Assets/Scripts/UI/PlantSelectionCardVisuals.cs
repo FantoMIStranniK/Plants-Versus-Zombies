@@ -1,6 +1,5 @@
-using Nova;
-using System;
 using UnityEngine;
+using Nova;
 
 namespace PVZ.UI
 {

@@ -53,7 +53,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  controls: {fileID: 0}
+  controls: {fileID: -944628639613478452, guid: 7f0591852f107f8438511badb30350ba,
+    type: 3}
   gridLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
+  moneyAttribute: {fileID: 11400000, guid: ea8ff69f48bb3594c81c20b2e48161c5, type: 2}
+  takeMoneyEffect: {fileID: 11400000, guid: b23d130932b405e4c885dfa27cca7eb7, type: 2}

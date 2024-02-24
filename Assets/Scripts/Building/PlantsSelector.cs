@@ -44,8 +44,8 @@ namespace PVZ.Plants
             Debug.Log(plantName);
         }
 
-        public GameObject GetCurrentPlant()
-            => PlantsLibrary[CurrentPlant].Prefab;
+        public PlantShopInfoSO GetCurrentPlantInfo()
+            => PlantsLibrary[CurrentPlant];
 
         public IList<PlantShopInfoSO> GetValues()
             => PlantsLibrary.Values.AsReadOnlyList();

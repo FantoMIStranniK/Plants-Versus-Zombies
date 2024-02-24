@@ -1,7 +1,7 @@
-using Nova;
-using PVZ.Plants;
 using System.Collections.Generic;
 using UnityEngine;
+using Nova;
+using PVZ.Plants;
 
 namespace PVZ.UI
 {
@@ -10,6 +10,7 @@ namespace PVZ.UI
         public UIBlock Root = null;
 
         public ListView PlantCardsView = null;
+
         private IList<PlantShopInfoSO> PlantsList = null;
 
         private void Start()
@@ -31,6 +32,7 @@ namespace PVZ.UI
         private void PlantCardClicked(Gesture.OnClick evt, PlantSelectionCardVisuals visuals, int index)
         {
             PlantName plantName = PlantsList[index].Name;
+
             PlantsSelector.Instance.SetCurrentPlant(plantName);
         }
 
@@ -38,7 +40,9 @@ namespace PVZ.UI
         {
             PlantShopInfoSO plantInfo = evt.UserData;
 
-            visuals.Cost.Text = plantInfo.Cost.ToString();
+            var cost = -plantInfo.Cost.gameplayEffect.Modifiers[0].Multiplier;
+
+            visuals.Cost.Text = cost.ToString();
         }
     }
 }

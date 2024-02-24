@@ -1153,7 +1153,7 @@ MonoBehaviour:
   targetCamera: {fileID: 0}
   referenceResolution: {x: 1920, y: 1080}
   fillMode: 0
-  planeDistance: 100
+  planeDistance: 1
   haveConfiguredSortGroup: 1
   additionalCameras: []
 --- !u!114 &7036730758139911720

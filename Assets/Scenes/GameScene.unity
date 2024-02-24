@@ -796,6 +796,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 465272544}
+    - targetCorrespondingSourceObject: {fileID: 3492219646402495027, guid: 9231f70221adc1f4197173dcea5bdea3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 667498469}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9231f70221adc1f4197173dcea5bdea3, type: 3}
 --- !u!4 &210533655 stripped
@@ -2739,6 +2743,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664375493}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &667498469 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5356281158898291223, guid: 85f01500b3437d74f9abf842bd4ca221,
+    type: 3}
+  m_PrefabInstance: {fileID: 2029334607585378504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &696323816
 GameObject:
   m_ObjectHideFlags: 0
@@ -3711,42 +3721,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8854550873803646771, guid: bb52a6a4a7d985242a0821e639a98600,
         type: 3}
-    - target: {fileID: 8854550873803646771, guid: bb52a6a4a7d985242a0821e639a98600,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854550873803646771, guid: bb52a6a4a7d985242a0821e639a98600,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"<PlantsLibrary>k__BackingField","value":{"$id":0,"$type":"System.Collections.Generic.Dictionary`2[[PVZ.Plants.PlantName,
-        Assembly-CSharp],[PVZ.Plants.PlantShopInfoSO, Assembly-CSharp]], mscorlib","comparer":{"$id":1,"$type":"System.Collections.Generic.SByteEnumEqualityComparer`1[[PVZ.Plants.PlantName,
-        Assembly-CSharp]], mscorlib","$rlength":0,"$rcontent":[]},"$rlength":1,"$rcontent":[{"$k":1,"$v":$eref:0}]}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854550873803646771, guid: bb52a6a4a7d985242a0821e639a98600,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[1]
-      value: '"path":"<PlantsLibrary>k__BackingField","add_keys":{"$id":0,"$type":"System.Object[],
-        mscorlib","$rlength":1,"$rcontent":[{"$id":1,"$type":"PVZ.Plants.PlantName,
-        Assembly-CSharp",1}]},"remove_keys":{"$id":2,"$type":"System.Object[], mscorlib","$rlength":1,"$rcontent":[{"$id":3,"$type":"PVZ.Plants.PlantName,
-        Assembly-CSharp",0}]}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854550873803646771, guid: bb52a6a4a7d985242a0821e639a98600,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[2]
-      value: '"path":"<PlantsLibrary>k__BackingField.{1es}","value":$eref:0'
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854550873803646771, guid: bb52a6a4a7d985242a0821e639a98600,
-        type: 3}
-      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854550873803646771, guid: bb52a6a4a7d985242a0821e639a98600,
-        type: 3}
-      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 850c361f194540d499de79f501e1def9,
-        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8050,7 +8024,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 210533655}
     m_Modifications:
     - target: {fileID: 7629768096375173, guid: 85f01500b3437d74f9abf842bd4ca221, type: 3}
       propertyPath: m_Camera
@@ -8084,17 +8058,17 @@ PrefabInstance:
     - target: {fileID: 5356281158898291223, guid: 85f01500b3437d74f9abf842bd4ca221,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5356281158898291223, guid: 85f01500b3437d74f9abf842bd4ca221,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5356281158898291223, guid: 85f01500b3437d74f9abf842bd4ca221,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5356281158898291223, guid: 85f01500b3437d74f9abf842bd4ca221,
         type: 3}
@@ -8120,17 +8094,6 @@ PrefabInstance:
         type: 3}
       propertyPath: grid
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5774169391008843155, guid: 85f01500b3437d74f9abf842bd4ca221,
-        type: 3}
-      propertyPath: controls
-      value: 
-      objectReference: {fileID: -944628639613478452, guid: 7f0591852f107f8438511badb30350ba,
-        type: 3}
-    - target: {fileID: 5774169391008843155, guid: 85f01500b3437d74f9abf842bd4ca221,
-        type: 3}
-      propertyPath: gridLayer.m_Bits
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5774169391008843155, guid: 85f01500b3437d74f9abf842bd4ca221,
         type: 3}
@@ -8253,19 +8216,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7346106643071451044, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
         type: 3}
-      propertyPath: fillMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7346106643071451044, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
-        type: 3}
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 1971341855}
-    - target: {fileID: 7346106643071451044, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
-        type: 3}
-      propertyPath: planeDistance
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8283,7 +8236,6 @@ SceneRoots:
   - {fileID: 1506783579}
   - {fileID: 157462040285701998}
   - {fileID: 919750595}
-  - {fileID: 2029334607585378504}
   - {fileID: 210533654}
   - {fileID: 1076333203}
   - {fileID: 8563645302546814788}
