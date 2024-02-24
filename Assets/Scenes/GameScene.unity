@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.1822843, g: 0.22799124, b: 0.307336, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5043,13 +5043,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506783577}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.07231796, y: -0.92512196, z: 0.34971675, w: 0.1289098}
+  m_LocalPosition: {x: 0, y: 20, z: 2.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 41.737, y: -165.413, z: -3.353}
 --- !u!114 &1506783580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7404,6 +7404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1905254773}
+  - component: {fileID: 1905254774}
   m_Layer: 0
   m_Name: InputManager
   m_TagString: Untagged
@@ -7426,6 +7427,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1905254774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905254771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5da66ad707f865b42af2bec2bfe3f63b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1971341855}
+  mouseEnabled: 1
+  invertScrolling: 1
+  touchEnabled: 1
+  navigationEnabled: 0
+  startNavigationFrom: {fileID: 0}
+  NavigationIndicator: {fileID: 0}
+  updateNavigationEveryXSeconds: 0.25
+  UpKey: 273
+  DownKey: 274
+  LeftKey: 276
+  RightKey: 275
+  SelectKey: 13
+  DeselectKey: 27
 --- !u!1 &1925300392
 GameObject:
   m_ObjectHideFlags: 0
@@ -8193,6 +8220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI_Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066781422502737392, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5795283055358108065, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
         type: 3}
