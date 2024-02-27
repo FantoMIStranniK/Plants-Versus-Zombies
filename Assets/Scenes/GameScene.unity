@@ -531,7 +531,7 @@ PrefabInstance:
     - target: {fileID: 3492219646402495027, guid: 9231f70221adc1f4197173dcea5bdea3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 3492219646402495027, guid: 9231f70221adc1f4197173dcea5bdea3,
         type: 3}
@@ -4134,7 +4134,7 @@ PrefabInstance:
     - target: {fileID: 490324357085631998, guid: 2627ced19b914ac43a81b629121d43f8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 490324357085631998, guid: 2627ced19b914ac43a81b629121d43f8,
         type: 3}
@@ -4826,6 +4826,314 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438208119}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1445307152
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2394793238348163750, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Zombie Spawner '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911786600563908788, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911786600563908788, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911786600563908788, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911786600563908788, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911786600563908788, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911786600563908788, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911786600563908788, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911786600563908788, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911786600563908788, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911786600563908788, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: maxDelay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: doRandomDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[0]
+      value: '"path":"waves.[0]","value":{"$id":0,"$type":"PVZ.Zombies.Wave, Assembly-CSharp","<SpawnPoint>k__BackingField":$eref:0,"<FinishPoint>k__BackingField":$eref:1,"<WaveSettings>k__BackingField":$eref:2}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[1]
+      value: '"path":"waves.[0].<FinishPoint>k__BackingField","value":$eref:1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[2]
+      value: '"path":"waves.[0].<SpawnPoint>k__BackingField","value":$eref:0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[3]
+      value: '"path":"waves.[1]","value":{"$id":0,"$type":"PVZ.Zombies.Wave, Assembly-CSharp","<SpawnPoint>k__BackingField":$eref:3,"<FinishPoint>k__BackingField":$eref:4,"<WaveSettings>k__BackingField":$eref:5}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[4]
+      value: '"path":"waves.[1].<FinishPoint>k__BackingField","value":$eref:4'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[5]
+      value: '"path":"waves.[1].<SpawnPoint>k__BackingField","value":$eref:3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[6]
+      value: '"path":"waves.[2]","value":{"$id":0,"$type":"PVZ.Zombies.Wave, Assembly-CSharp","<SpawnPoint>k__BackingField":$eref:6,"<FinishPoint>k__BackingField":$eref:7,"<WaveSettings>k__BackingField":$eref:8}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[7]
+      value: '"path":"waves.[2].<FinishPoint>k__BackingField","value":$eref:7'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[8]
+      value: '"path":"waves.[2].<SpawnPoint>k__BackingField","value":$eref:6'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[9]
+      value: '"path":"waves.[3]","value":{"$id":0,"$type":"PVZ.Zombies.Wave, Assembly-CSharp","<SpawnPoint>k__BackingField":$eref:9,"<FinishPoint>k__BackingField":$eref:10,"<WaveSettings>k__BackingField":$eref:11}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[10]
+      value: '"path":"waves.[3].<FinishPoint>k__BackingField","value":$eref:10'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[11]
+      value: '"path":"waves.[3].<SpawnPoint>k__BackingField","value":$eref:9'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[12]
+      value: '"path":"waves.[4]","value":{"$id":0,"$type":"PVZ.Zombies.Wave, Assembly-CSharp","<SpawnPoint>k__BackingField":$eref:12,"<FinishPoint>k__BackingField":$eref:13,"<WaveSettings>k__BackingField":$eref:14}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[13]
+      value: '"path":"waves.[4].<FinishPoint>k__BackingField","value":$eref:13'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[14]
+      value: '"path":"waves.[4].<SpawnPoint>k__BackingField","value":$eref:12'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1445307162}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 1445307161}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 69044b9ed98afae418ea32d19507e5dd,
+        type: 2}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 1445307160}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 1445307159}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 980a76324f179944aa31dc687070d340,
+        type: 2}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 1445307158}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[7]
+      value: 
+      objectReference: {fileID: 1445307157}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1e8d67e35d454ab46ad6dc61b238a651,
+        type: 2}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[9]
+      value: 
+      objectReference: {fileID: 1445307156}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[10]
+      value: 
+      objectReference: {fileID: 1445307155}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e36b40f65834644dabad1e11165e20c,
+        type: 2}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[12]
+      value: 
+      objectReference: {fileID: 1445307154}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[13]
+      value: 
+      objectReference: {fileID: 1445307153}
+    - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[14]
+      value: 
+      objectReference: {fileID: 11400000, guid: 04b51165076b4744bac7b5d2b8d30809,
+        type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1baae95f0e4d43445af254d6d5b10e05, type: 3}
+--- !u!4 &1445307153 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4781252379945965643, guid: 1baae95f0e4d43445af254d6d5b10e05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445307152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1445307154 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 101899687600556264, guid: 1baae95f0e4d43445af254d6d5b10e05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445307152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1445307155 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2133302270246498655, guid: 1baae95f0e4d43445af254d6d5b10e05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445307152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1445307156 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5852069499163718519, guid: 1baae95f0e4d43445af254d6d5b10e05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445307152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1445307157 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8548781294777371100, guid: 1baae95f0e4d43445af254d6d5b10e05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445307152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1445307158 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2919740961770810174, guid: 1baae95f0e4d43445af254d6d5b10e05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445307152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1445307159 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1526537558532279538, guid: 1baae95f0e4d43445af254d6d5b10e05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445307152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1445307160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4648101078941275325, guid: 1baae95f0e4d43445af254d6d5b10e05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445307152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1445307161 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1273087598009691908, guid: 1baae95f0e4d43445af254d6d5b10e05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445307152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1445307162 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8873494621274208239, guid: 1baae95f0e4d43445af254d6d5b10e05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445307152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1455537840
 GameObject:
   m_ObjectHideFlags: 0
@@ -7622,7 +7930,7 @@ Camera:
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
@@ -7642,7 +7950,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 65.2
+  field of view: 67.67275
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -7669,7 +7977,7 @@ Transform:
   m_GameObject: {fileID: 1971341853}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 5, y: 7.5, z: -4.5}
+  m_LocalPosition: {x: 5, y: 7.5, z: -5.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8144,17 +8452,17 @@ PrefabInstance:
     - target: {fileID: 320122314934169265, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0011843086
+      value: 0.00124141
       objectReference: {fileID: 0}
     - target: {fileID: 320122314934169265, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0011843086
+      value: 0.00124141
       objectReference: {fileID: 0}
     - target: {fileID: 320122314934169265, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0011843086
+      value: 0.00124141
       objectReference: {fileID: 0}
     - target: {fileID: 320122314934169265, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
         type: 3}
@@ -8169,7 +8477,7 @@ PrefabInstance:
     - target: {fileID: 320122314934169265, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.7928932
+      value: -5.2228928
       objectReference: {fileID: 0}
     - target: {fileID: 320122314934169265, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
         type: 3}
@@ -8224,7 +8532,7 @@ PrefabInstance:
     - target: {fileID: 4066781422502737392, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5795283055358108065, guid: 7c7dfe19e124ac74cb34c7f5557d9834,
         type: 3}
@@ -8272,3 +8580,4 @@ SceneRoots:
   - {fileID: 1076333203}
   - {fileID: 8563645302546814788}
   - {fileID: 1905254773}
+  - {fileID: 1445307152}
