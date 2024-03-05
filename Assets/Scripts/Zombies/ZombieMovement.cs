@@ -13,13 +13,19 @@ public class ZombieMovement : MonoBehaviour
 
     private Rigidbody rb;
 
+    private ZombieController controller;
+
     private void Awake()
     {
         TryGetComponent(out rb);
+        controller = GetComponent<ZombieController>();
     }
 
     private void FixedUpdate()
     {
+        if (controller.State != ZombieState.Move)
+            return; // maybe later i will make it so it gets new state by an event 
+
         MoveZombie();
     }
 
@@ -28,6 +34,7 @@ public class ZombieMovement : MonoBehaviour
         float calculatedSpeed = Time.fixedDeltaTime * speed;
 
         var newPosition = Vector3.MoveTowards(transform.position, FinishPosition, calculatedSpeed);
+        //transform.rotation = Quaternion.LookRotation(newPosition, Vector3.up);
 
         rb.MovePosition(newPosition);
     }
