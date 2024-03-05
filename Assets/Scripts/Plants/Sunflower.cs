@@ -6,10 +6,15 @@ namespace PVZ.Plants
 {
     public class Sunflower : MonoBehaviour
     {
-        [SerializeField] private float timeBeforeStart = 1f;
-        [SerializeField] private float timeBeforeIterations = 1f;
+        [SerializeField] 
+        private float timeBeforeStart = 1f;
+        [SerializeField] 
+        private float timeBeforeIterations = 1f;
+
         [Space]
-        [SerializeField] private GameplayEffectScriptableObject addPointsEffect;
+
+        [SerializeField] 
+        private GameplayEffectScriptableObject addPointsEffect;
 
         private void Start()
         {

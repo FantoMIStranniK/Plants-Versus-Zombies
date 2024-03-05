@@ -3721,6 +3721,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8854550873803646771, guid: bb52a6a4a7d985242a0821e639a98600,
         type: 3}
+    - target: {fileID: 8854550873803646771, guid: bb52a6a4a7d985242a0821e639a98600,
+        type: 3}
+      propertyPath: <CurrentPlant>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854550873803646771, guid: bb52a6a4a7d985242a0821e639a98600,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854550873803646771, guid: bb52a6a4a7d985242a0821e639a98600,
+        type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[0]
+      value: '"path":"<PlantsLibrary>k__BackingField","add_keys":null,"remove_keys":{"$id":0,"$type":"System.Object[],
+        mscorlib","$rlength":1,"$rcontent":[{"$id":1,"$type":"PVZ.Plants.PlantName,
+        Assembly-CSharp",5}]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854550873803646771, guid: bb52a6a4a7d985242a0821e639a98600,
+        type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4113,6 +4135,124 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043937452}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1044974433
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1044974434}
+  - component: {fileID: 1044974435}
+  m_Layer: 0
+  m_Name: AttributeLibrary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1044974434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044974433}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1044974435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044974433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd9f6a9a1bf2444299cd94ee1e03db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: ea8ff69f48bb3594c81c20b2e48161c5, type: 2}
+    - {fileID: 11400000, guid: 0ae0ba05e7b2a954d91ceb94c56c1452, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: <Attributes>k__BackingField
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[PVZ.Attributes.AttributeKey,
+        Assembly-CSharp],[AttributeSystem.Authoring.AttributeScriptableObject, attributesystem]],
+        mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[PVZ.Attributes.AttributeKey,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 7
+      Data: PVZ.Attributes.AttributeKey, Assembly-CSharp
+    - Name: Side
+      Entry: 3
+      Data: 0
+    - Name: Type
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: $v
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 7
+      Data: PVZ.Attributes.AttributeKey, Assembly-CSharp
+    - Name: Side
+      Entry: 3
+      Data: 2
+    - Name: Type
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: $v
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
 --- !u!1001 &1076333203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4903,7 +5043,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
+        type: 3}
     - target: {fileID: 4591291602116613633, guid: 1baae95f0e4d43445af254d6d5b10e05,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
@@ -8296,7 +8437,7 @@ PrefabInstance:
     - target: {fileID: 1772409969895158800, guid: 6f664c30c567254469b4d4b80b2aef28,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1772409969895158800, guid: 6f664c30c567254469b4d4b80b2aef28,
         type: 3}
@@ -8306,7 +8447,7 @@ PrefabInstance:
     - target: {fileID: 1772409969895158800, guid: 6f664c30c567254469b4d4b80b2aef28,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1772409969895158800, guid: 6f664c30c567254469b4d4b80b2aef28,
         type: 3}
@@ -8574,10 +8715,11 @@ SceneRoots:
   m_Roots:
   - {fileID: 1971341856}
   - {fileID: 1506783579}
+  - {fileID: 1905254773}
+  - {fileID: 1044974434}
   - {fileID: 157462040285701998}
   - {fileID: 919750595}
   - {fileID: 210533654}
   - {fileID: 1076333203}
   - {fileID: 8563645302546814788}
-  - {fileID: 1905254773}
   - {fileID: 1445307152}

@@ -2,25 +2,28 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Unity.Mathematics;
 using Sirenix.OdinInspector;
-using PVZ.Grid;
-using PVZ.Plants;
 using AttributeSystem.Authoring;
-using PVZ.Player;
 using AbilitySystem.Authoring;
+using PVZ.Grid;
+using PVZ.Player;
+using PVZ.Plants;
 
 namespace PVZ.Building
 {
     public class BuildingSystem : SerializedMonoBehaviour
     {
-        [SerializeField] private InputActionAsset controls;
+        [SerializeField] 
+        private InputActionAsset controls;
 
         [Space]
 
-        [SerializeField] private LayerMask gridLayer;
+        [SerializeField] 
+        private LayerMask gridLayer;
 
         [Space]
 
-        [SerializeField] private AttributeScriptableObject moneyAttribute;
+        [SerializeField] 
+        private AttributeScriptableObject moneyAttribute;
 
         private void Awake()
         {

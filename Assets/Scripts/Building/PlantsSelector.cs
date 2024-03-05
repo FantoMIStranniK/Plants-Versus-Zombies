@@ -1,21 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
-using PVZ.UI;
 using Unity.VisualScripting;
 
 namespace PVZ.Plants
 {
     public enum PlantName : sbyte
     {
-        Deconstruction,
-        Sunflower,
-        Peashooter,
-        Chillishooter,
-        Mintshooter,
-        Ivyshooter,
+        Sunflower = 0,
+        Peashooter = 1,
+        Chillishooter = 2,
+        Mintshooter = 3,
+        Ivyshooter = 4,
+        Deconstruction = 5,
     }
-    public class PlantsSelector : SerializedMonoBehaviour
+    public class PlantsSelector : SerializedMonoBehaviour, IInstance
     {
         public static PlantsSelector Instance {  get; private set; }
 
@@ -30,12 +29,12 @@ namespace PVZ.Plants
             CreateInstance();
         }
 
-        private void CreateInstance()
+        public void CreateInstance()
         {
             if (Instance == null)
                 Instance = this;
             else
-                Debug.LogWarning($"WARNING: {nameof(PlantsSelector)} already has an instance!");
+                Debug.LogWarning($"WARNING: {GetType().Name} already has an instance!");
         }
 
         public void SetCurrentPlant(PlantName plantName)
