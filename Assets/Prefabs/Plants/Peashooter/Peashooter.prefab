@@ -9735,6 +9735,7 @@ GameObject:
   - component: {fileID: 8692050086735774573}
   - component: {fileID: 4106699825649668432}
   - component: {fileID: 5032904883626700422}
+  - component: {fileID: 4288364036253221922}
   m_Layer: 6
   m_Name: Peashooter
   m_TagString: Untagged
@@ -9845,6 +9846,27 @@ MonoBehaviour:
   projectile: {fileID: 8283179439008816225, guid: e32a73c3cbfeba24b98b7bf6801bda13,
     type: 3}
   shootingPoint: {fileID: 5140987642156541692}
+--- !u!95 &4288364036253221922
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8952571161534687122}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a7116b9bd806e348b51e8d535aa0083, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9026250702239393405
 GameObject:
   m_ObjectHideFlags: 0

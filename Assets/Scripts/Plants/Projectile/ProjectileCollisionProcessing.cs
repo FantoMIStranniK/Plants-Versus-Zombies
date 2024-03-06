@@ -7,6 +7,11 @@ public class ProjectileCollisionProcessing : MonoBehaviour
     [SerializeField]
     private GameplayEffectScriptableObject attackEffect;
 
+    private void OnTriggerEnter(Collider other)
+    {
+        DamageZombie(other.gameObject);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         DamageZombie(collision.gameObject);
