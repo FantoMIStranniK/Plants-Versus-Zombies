@@ -33,7 +33,10 @@ namespace PVZ.Plants
 
         private float GetShootingSpeed()
         {
-            var speedAttribute = AttribiteLibrary.Instance.GetAttribute(new AttributeKey(AttributeSide.General, AttributeType.AttackSpeed));
+            var attributeLibrary = AttribiteLibrary.Instance;
+
+            if (!attributeLibrary.TryGetAttribute(new AttributeKey(AttributeSide.General, AttributeType.AttackSpeed), out var speedAttribute))
+                return -1f;
 
             return GetAttributeValue(speedAttribute).CurrentValue;
         }

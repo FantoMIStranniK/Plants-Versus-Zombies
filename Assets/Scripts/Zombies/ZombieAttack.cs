@@ -1,39 +1,51 @@
-using AbilitySystem.Authoring;
 using UnityEngine;
+using AbilitySystem.Authoring;
 
-public class ZombieAttack : MonoBehaviour
+namespace PVZ.Zombies
 {
-    private ZombieController controller;
-    [SerializeField] private GameplayEffectScriptableObject attackEffect;
-
-    [SerializeField] private float attackDelay;
-    private float attackTime;
-
-    private void Awake()
+    public class ZombieAttack : MonoBehaviour
     {
-        controller = GetComponent<ZombieController>();
-    }
+        [SerializeField] 
+        private GameplayEffectScriptableObject attackEffect;
 
-    private void Update()
-    {
-        if (controller.State != ZombieState.Attack)
-            return;
+        [SerializeField] 
+        private float attackDelay;
 
-        attackTime += Time.deltaTime;
-        
-        if (attackDelay > attackTime)
-            return;
+        private ZombieController controller;
 
-        attackTime = 0;
+        private float attackTime;
 
-        if (Physics.Raycast(transform.position, -transform.right, out RaycastHit hit, controller.AttackDistance, controller.plantLM))
+        private void Awake()
         {
-            IDamagable damagable = hit.collider.GetComponent<IDamagable>();
+            controller = GetComponent<ZombieController>();
+        }
 
-            if (damagable is null)
+        private void Update()
+        {
+            TryAttack();
+        }
+
+        private void TryAttack()
+        {
+            if (controller.State != ZombieState.Attack)
                 return;
 
-            damagable.Damage(attackEffect);
+            attackTime += Time.deltaTime;
+
+            if (attackDelay > attackTime)
+                return;
+
+            attackTime = 0;
+
+            if (Physics.Raycast(transform.position, -transform.right, out RaycastHit hit, controller.AttackDistance, controller.PlantLayerMask))
+            {
+                IDamagable damagable = hit.collider.GetComponent<IDamagable>();
+
+                if (damagable is null)
+                    return;
+
+                damagable.Damage(attackEffect);
+            }
         }
     }
 }

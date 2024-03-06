@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 5088415273585751012}
   - component: {fileID: 388765174729653565}
   - component: {fileID: 6623806599271901226}
+  - component: {fileID: 7476581856748095582}
   m_Layer: 6
   m_Name: SunflowerPrefab
   m_TagString: Untagged
@@ -156,8 +157,6 @@ MonoBehaviour:
   timeBeforeStart: 2
   timeBeforeIterations: 6
   addPointsEffect: {fileID: 11400000, guid: 1a3e8698bb96bad48b5689f12657f7e3, type: 2}
-  healthAttributeSO: {fileID: 11400000, guid: b74c7909836452641a33fde1477254af, type: 2}
-  startAbilities: {fileID: 11400000, guid: e7b1018d60422ef4f915e2f93b4bc6b0, type: 2}
 --- !u!95 &5088415273585751012
 Animator:
   serializedVersion: 5
@@ -216,6 +215,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attributeSystem: {fileID: 388765174729653565}
   Level: 0
+--- !u!114 &7476581856748095582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299727695506437438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af3d2d958f8afb40babf9d57cc1a504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attributesToInitialize: {fileID: 11400000, guid: e7b1018d60422ef4f915e2f93b4bc6b0,
+    type: 2}
 --- !u!1 &556218971039181864
 GameObject:
   m_ObjectHideFlags: 0

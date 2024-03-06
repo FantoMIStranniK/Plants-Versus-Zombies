@@ -1,20 +1,19 @@
 using UnityEngine;
 using Nova;
-using AttributeSystem.Authoring;
 using PVZ.Player;
+using PVZ.Attributes;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 
 namespace PVZ.UI
 {
-    public class AttributeUIText : MonoBehaviour
+    public class AttributeUIText : SerializedMonoBehaviour
     {
-        [SerializeField] private AttributeScriptableObject attribute;
+        [SerializeField] 
+        private TextBlock textBlock;
 
-        [SerializeField] private TextBlock textBlock;
-
-        private void Start()
-        {
-            UpdateText();
-        }
+        [OdinSerialize] 
+        private AttributeKey attributeKey;
 
         private void Update()
         {
@@ -23,6 +22,11 @@ namespace PVZ.UI
 
         private void UpdateText()
         {
+            var attributeLibrary = AttribiteLibrary.Instance;
+
+            if (!attributeLibrary.TryGetAttribute(attributeKey, out var attribute))
+                return;
+
             var value = PlayerController.Instance.GetAttributeValue(attribute);
 
             textBlock.Text = value.CurrentValue.ToString();

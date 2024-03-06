@@ -6,16 +6,21 @@ using AttributeSystem.Components;
 
 namespace PVZ.Attributes
 {
-    [RequireComponent(typeof(AbilitySystemCharacter))]
+    [RequireComponent(typeof(AbilitySystemCharacter), typeof(AttributeSystemComponent))]
     public class AttributeDependentBehaviour : MonoBehaviour
     {
         private AbilitySystemCharacter _abilitySystemCharacter;
+        private AttributeSystemComponent _attributeSystemComponent;
 
-        private void Awake()
+        protected virtual void Awake()
         {
             if (!TryGetComponent(out _abilitySystemCharacter))
 #if UNITY_EDITOR
                 Debug.LogError($"ERROR: No {nameof(AbilitySystemCharacter)} component was found on {gameObject.name}!");
+#endif
+            if (!TryGetComponent(out _attributeSystemComponent))
+#if UNITY_EDITOR
+                Debug.LogError($"ERROR: No {nameof(AttributeSystemComponent)} component was found on {gameObject.name}!");
 #endif
         }
 
@@ -35,7 +40,7 @@ namespace PVZ.Attributes
 
         public AttributeValue GetAttributeValue(AttributeScriptableObject attributeScriptableObject)
         {
-            _abilitySystemCharacter.AttributeSystem.GetAttributeValue(attributeScriptableObject, out AttributeValue attributeValue);
+            _attributeSystemComponent.GetAttributeValue(attributeScriptableObject, out AttributeValue attributeValue);
 
             return attributeValue;
         }

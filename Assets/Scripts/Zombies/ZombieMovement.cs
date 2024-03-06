@@ -2,40 +2,42 @@ using System;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class ZombieMovement : MonoBehaviour
+namespace PVZ.Zombies
 {
-    [HideInInspector]
-    public float3 FinishPosition;
-
-    [Range(0.1f, 100f)]
-    [SerializeField] 
-    private float speed = 2.5f;
-
-    private Rigidbody rb;
-
-    private ZombieController controller;
-
-    private void Awake()
+    [RequireComponent(typeof(ZombieController))]
+    public class ZombieMovement : MonoBehaviour
     {
-        TryGetComponent(out rb);
-        controller = GetComponent<ZombieController>();
-    }
+        [HideInInspector]
+        public float3 FinishPosition;
 
-    private void FixedUpdate()
-    {
-        if (controller.State != ZombieState.Move)
-            return; // maybe later i will make it so it gets new state by an event 
+        [Range(0.1f, 100f)]
+        [SerializeField]
+        private float speed = 2.5f;
 
-        MoveZombie();
-    }
+        private Rigidbody _rb;
 
-    private void MoveZombie()
-    {
-        float calculatedSpeed = Time.fixedDeltaTime * speed;
+        private ZombieController _controller;
 
-        var newPosition = Vector3.MoveTowards(transform.position, FinishPosition, calculatedSpeed);
-        //transform.rotation = Quaternion.LookRotation(newPosition, Vector3.up);
+        private void Awake()
+        {
+            TryGetComponent(out _rb);
 
-        rb.MovePosition(newPosition);
+            _controller = GetComponent<ZombieController>();
+        }
+
+        private void FixedUpdate()
+        {
+            if (_controller.State == ZombieState.Move)
+                MoveZombie();
+        }
+
+        private void MoveZombie()
+        {
+            float calculatedSpeed = Time.fixedDeltaTime * speed;
+
+            var newPosition = Vector3.MoveTowards(transform.position, FinishPosition, calculatedSpeed);
+
+            _rb.MovePosition(newPosition);
+        }
     }
 }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36fd283322353ff42b30cd679073251e, type: 3}
-  m_Name: SunflowerHealthGameplayEffect
+  m_Name: SunflowerHealthInit
   m_EditorClassIdentifier: 
   gameplayEffect:
     DurationPolicy: 0
@@ -19,7 +19,7 @@ MonoBehaviour:
     Modifiers:
     - Attribute: {fileID: 11400000, guid: b74c7909836452641a33fde1477254af, type: 2}
       ModifierOperator: 0
-      ModifierMagnitude: {fileID: 11400000, guid: 3c006695dccb3c242bc0bfdaac46d971,
+      ModifierMagnitude: {fileID: 11400000, guid: d799f0da5f4253e489a8e863a3198018,
         type: 2}
       Multiplier: 5
     ConditionalGameplayEffects: []

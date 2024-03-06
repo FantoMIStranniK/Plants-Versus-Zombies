@@ -25,7 +25,16 @@ namespace PVZ.Attributes
                 Debug.LogWarning($"WARNING: {GetType().Name} already has an instance!");
         }
 
-        public AttributeScriptableObject GetAttribute(AttributeKey key)
-            => Attributes[key];
+        public bool TryGetAttribute(AttributeKey key, out AttributeScriptableObject attributeScriptableObject)
+        {
+            attributeScriptableObject = null;
+
+            if (!Attributes.ContainsKey(key))
+                return false;
+
+            attributeScriptableObject = Attributes[key];
+
+            return true;
+        }
     }
 }

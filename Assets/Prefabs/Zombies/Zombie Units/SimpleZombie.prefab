@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6307668526454792215}
   - component: {fileID: 3335113059718219943}
   - component: {fileID: 5181942719476501184}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,14 +92,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8297568398328132095}
-  - component: {fileID: 2267316891297891573}
   - component: {fileID: 4864558939092690397}
   - component: {fileID: 7919597811280832481}
   - component: {fileID: -1428921354775401886}
+  - component: {fileID: 2267316891297891573}
   - component: {fileID: -7254917149346770379}
-  - component: {fileID: 4533028351665440136}
   - component: {fileID: 3065994060535980347}
-  m_Layer: 0
+  - component: {fileID: 4533028351665440136}
+  m_Layer: 7
   m_Name: SimpleZombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,23 +122,6 @@ Transform:
   - {fileID: 6307668526454792215}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2267316891297891573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774282574071248653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b9200aaff3a1f34b9b23514fe8b96d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FinishPosition:
-    x: 0
-    y: 0
-    z: 0
-  speed: 0.5
 --- !u!54 &4864558939092690397
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -199,11 +182,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fbca4389566cee4286e7b9b354f5443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 0
-  AttackDistance: 0.75
-  plantLM:
+  <State>k__BackingField: 0
+  <AttackDistance>k__BackingField: 1
+  <PlantLayerMask>k__BackingField:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &2267316891297891573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774282574071248653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9200aaff3a1f34b9b23514fe8b96d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FinishPosition:
+    x: 0
+    y: 0
+    z: 0
+  speed: 0.5
 --- !u!114 &-7254917149346770379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,20 +218,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackEffect: {fileID: 11400000, guid: 26868202d39252e4f9c5e29f719e9664, type: 2}
   attackDelay: 0.5
---- !u!114 &4533028351665440136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774282574071248653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c1425312ee2f5e4da3ab46a2724a3d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _attributeSystem: {fileID: 3065994060535980347}
-  Level: 0
 --- !u!114 &3065994060535980347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,7 +233,7 @@ MonoBehaviour:
   AttributeSystemEvents: []
   Attributes:
   - {fileID: 11400000, guid: b74c7909836452641a33fde1477254af, type: 2}
-  - {fileID: 11400000, guid: 9d8d0d962e704e24d89e0825ed64cfd1, type: 2}
+  - {fileID: 11400000, guid: cfd82b49f184720428987eb55dbe0022, type: 2}
   AttributeValues:
   - Attribute: {fileID: 11400000, guid: b74c7909836452641a33fde1477254af, type: 2}
     BaseValue: 10
@@ -256,10 +242,24 @@ MonoBehaviour:
       Add: 0
       Multiply: 0
       Override: 0
-  - Attribute: {fileID: 11400000, guid: 9d8d0d962e704e24d89e0825ed64cfd1, type: 2}
+  - Attribute: {fileID: 11400000, guid: cfd82b49f184720428987eb55dbe0022, type: 2}
     BaseValue: 1
     CurrentValue: 1
     Modifier:
       Add: 0
       Multiply: 0
       Override: 0
+--- !u!114 &4533028351665440136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774282574071248653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1425312ee2f5e4da3ab46a2724a3d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attributeSystem: {fileID: 3065994060535980347}
+  Level: 0

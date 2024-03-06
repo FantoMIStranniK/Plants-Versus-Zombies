@@ -1,27 +1,35 @@
 using UnityEngine;
 
-public class ZombieController : MonoBehaviour
+namespace PVZ.Zombies
 {
-    public ZombieState State;
-    public float AttackDistance;
-
-    public LayerMask plantLM;
-
-    private void Update()
+    public enum ZombieState : sbyte
     {
-        if (Physics.Raycast(transform.position, -transform.right, out RaycastHit hit, AttackDistance, plantLM))
+        Move,
+        Attack,
+    }
+
+    public class ZombieController : MonoBehaviour
+    {
+        [field: SerializeField]
+        public ZombieState State { get; private set; } = ZombieState.Move;
+
+        [field: SerializeField]
+        public float AttackDistance { get; private set; } = 1f;
+
+        [field: SerializeField]
+        public LayerMask PlantLayerMask { get; private set; }
+
+        private void Update()
         {
-            State = ZombieState.Attack;
+            TryChangeState();
         }
-        else
+
+        private void TryChangeState()
         {
-            State = ZombieState.Move;
+            if (Physics.Raycast(transform.position, -transform.right, out RaycastHit hit, AttackDistance, PlantLayerMask))
+                State = ZombieState.Attack;
+            else
+                State = ZombieState.Move;
         }
     }
-}
-
-public enum ZombieState : byte
-{
-    Move,
-    Attack,
 }

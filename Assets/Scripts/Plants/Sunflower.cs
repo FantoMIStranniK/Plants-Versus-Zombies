@@ -1,13 +1,11 @@
 using UnityEngine;
 using AbilitySystem.Authoring;
 using PVZ.Player;
-using AbilitySystem;
-using AttributeSystem.Components;
-using AttributeSystem.Authoring;
+using PVZ.Attributes;
 
 namespace PVZ.Plants
 {
-    public class Sunflower : MonoBehaviour, IDamagable
+    public class Sunflower : AttributeDependentBehaviour, IDamagable
     {
         [SerializeField] 
         private float timeBeforeStart = 1f;
@@ -19,19 +17,9 @@ namespace PVZ.Plants
         [SerializeField] 
         private GameplayEffectScriptableObject addPointsEffect;
 
-        [SerializeField] private AttributeScriptableObject healthAttributeSO;
-        [SerializeField] private AbstractAbilityScriptableObject startAbilities;
-
-        private AbilitySystemCharacter abilitySystemCharacter;
-        private AttributeSystemComponent attributeSystem;
-
         private void Start()
         {
-            abilitySystemCharacter = GetComponent<AbilitySystemCharacter>();
-            attributeSystem = GetComponent<AttributeSystemComponent>();
             InvokeRepeating(nameof(AddSunPoints), timeBeforeStart, timeBeforeIterations);
-
-            ApplyAbility(startAbilities);
         }
 
         private void AddSunPoints()
@@ -39,28 +27,17 @@ namespace PVZ.Plants
 
         public void Damage(GameplayEffectScriptableObject damageEffect)
         {
-            GameplayEffectSpec spec = abilitySystemCharacter.MakeOutgoingSpec(damageEffect);
+            ApplyEffect(damageEffect);
 
-            abilitySystemCharacter.ApplyGameplayEffectSpecToSelf(spec);
+            var attributeLibrary = AttribiteLibrary.Instance;
 
-            attributeSystem.GetAttributeValue(healthAttributeSO, out AttributeValue health);
+            if (!attributeLibrary.TryGetAttribute(new AttributeKey(AttributeSide.General, AttributeType.Health), out var health))
+                return;
+
+            var healthValue = GetAttributeValue(health);
             
-            if (health.CurrentValue <= 0)
-            {
+            if (healthValue.CurrentValue <= 0)
                 Destroy(gameObject);
-            }
-        }
-
-        public void ApplyAbility(AbstractAbilityScriptableObject ability)
-        {
-            AbstractAbilitySpec abilitySpec = ability.CreateSpec(abilitySystemCharacter);
-
-            StartCoroutine(abilitySpec.TryActivateAbility());
         }
     }
-}
-
-public interface IDamagable
-{
-    public void Damage(GameplayEffectScriptableObject damageEffect);
 }

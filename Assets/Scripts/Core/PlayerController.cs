@@ -7,8 +7,10 @@ namespace PVZ.Player
     {
         public static PlayerController Instance { get; private set; }
 
-        private void Start()
+        protected override void Awake()
         {
+            base.Awake();
+
             CreateInstance();
         }
 
@@ -17,7 +19,9 @@ namespace PVZ.Player
             if (Instance == null)
                 Instance = this;
             else
+#if UNITY_EDITOR
                 Debug.LogWarning($"WARNING: {GetType().Name} already has an instance!");
+#endif
         }
     }
 }

@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Unity.Mathematics;
-using Sirenix.OdinInspector;
 using AttributeSystem.Authoring;
 using AbilitySystem.Authoring;
 using PVZ.Grid;
@@ -10,7 +9,7 @@ using PVZ.Plants;
 
 namespace PVZ.Building
 {
-    public class BuildingSystem : SerializedMonoBehaviour
+    public class BuildingSystem : MonoBehaviour
     {
         [SerializeField] 
         private InputActionAsset controls;
@@ -37,8 +36,6 @@ namespace PVZ.Building
             RaycastHit hit;
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            Debug.DrawRay(ray.origin, ray.direction * 100f, Color.red, math.INFINITY);
 
             if (Physics.Raycast(ray, out hit, 100f, gridLayer))
                 CheckTowerRequirments(hit);

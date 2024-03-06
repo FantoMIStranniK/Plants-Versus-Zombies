@@ -16,7 +16,7 @@ namespace PVZ.Attributes
         AttackSpeed,
         Damage,
     }
-
+    
     public readonly struct AttributeKey
     {
         public readonly AttributeSide Side;

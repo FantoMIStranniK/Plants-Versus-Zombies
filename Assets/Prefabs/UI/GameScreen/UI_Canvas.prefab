@@ -1462,7 +1462,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1546,7 +1546,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b94a49c0dd67fc4d8051da49f0d7832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attribute: {fileID: 11400000, guid: ea8ff69f48bb3594c81c20b2e48161c5, type: 2}
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: attributeKey
+      Entry: 7
+      Data: PVZ.Attributes.AttributeKey, Assembly-CSharp
+    - Name: Side
+      Entry: 3
+      Data: 0
+    - Name: Type
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
   textBlock: {fileID: 3875679088239974596}
 --- !u!1 &6728346594027733705
 GameObject:
