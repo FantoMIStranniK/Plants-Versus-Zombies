@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace PVZ.Zombies
 {
-    [RequireComponent(typeof(ZombieController))]
+    [RequireComponent(typeof(ZombieController), typeof(Rigidbody))]
     public class ZombieMovement : MonoBehaviour
     {
         [HideInInspector]
@@ -14,14 +14,10 @@ namespace PVZ.Zombies
         [SerializeField]
         private float speed = 2.5f;
 
-        private Rigidbody _rb;
-
         private ZombieController _controller;
 
         private void Awake()
         {
-            TryGetComponent(out _rb);
-
             _controller = GetComponent<ZombieController>();
         }
 
@@ -33,11 +29,16 @@ namespace PVZ.Zombies
 
         private void MoveZombie()
         {
-            float calculatedSpeed = Time.fixedDeltaTime * speed;
+            var direction = (Vector3)FinishPosition - transform.position;
 
-            var newPosition = Vector3.MoveTowards(transform.position, FinishPosition, calculatedSpeed);
+            var normalizedDirection = direction.normalized;
 
-            _rb.MovePosition(newPosition);
+            var movement = normalizedDirection * speed * Time.fixedDeltaTime;
+
+            if (movement.sqrMagnitude > direction.sqrMagnitude)
+                transform.position = FinishPosition;
+            else
+                transform.position += movement;
         }
     }
 }

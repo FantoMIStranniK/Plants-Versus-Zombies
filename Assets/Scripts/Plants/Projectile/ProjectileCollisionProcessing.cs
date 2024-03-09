@@ -1,33 +1,30 @@
 using UnityEngine;
-using PVZ;
 using AbilitySystem.Authoring;
 
-public class ProjectileCollisionProcessing : MonoBehaviour
+namespace PVZ.Plants
 {
-    [SerializeField]
-    private GameplayEffectScriptableObject attackEffect;
-
-    private void OnTriggerEnter(Collider other)
+    public class ProjectileCollisionProcessing : MonoBehaviour
     {
-        DamageZombie(other.gameObject);
-    }
+        [SerializeField]
+        private GameplayEffectScriptableObject attackEffect;
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        DamageZombie(collision.gameObject);
-    }
+        private void OnCollisionEnter(Collision collision)
+        {
+            DamageZombie(collision.gameObject);
+        }
 
-    private void DamageZombie(GameObject zombie)
-    {
-        print("collision");
+        private void DamageZombie(GameObject zombie)
+        {
+            print("collision");
 
-        IDamagable damagable = zombie.GetComponent<IDamagable>();
+            Destroy(gameObject);
 
-        if (damagable is null)
-            return;
+            IDamagable damagable = zombie.GetComponent<IDamagable>();
 
-        damagable.Damage(attackEffect);
+            if (damagable is null)
+                return;
 
-        Destroy(gameObject);
+            damagable.Damage(attackEffect);
+        }
     }
 }

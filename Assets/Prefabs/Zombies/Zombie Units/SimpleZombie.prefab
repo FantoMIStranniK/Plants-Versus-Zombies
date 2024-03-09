@@ -94,11 +94,13 @@ GameObject:
   - component: {fileID: 8297568398328132095}
   - component: {fileID: 4864558939092690397}
   - component: {fileID: 7919597811280832481}
+  - component: {fileID: 5858579489922121068}
   - component: {fileID: -1428921354775401886}
   - component: {fileID: 2267316891297891573}
   - component: {fileID: -7254917149346770379}
   - component: {fileID: 3065994060535980347}
   - component: {fileID: 4533028351665440136}
+  - component: {fileID: -4227013152480013505}
   m_Layer: 7
   m_Name: SimpleZombie
   m_TagString: Untagged
@@ -145,7 +147,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -170,6 +172,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5858579489922121068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774282574071248653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd97e5aa91474294a9fadba2c409340c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-1428921354775401886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,3 +277,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attributeSystem: {fileID: 3065994060535980347}
   Level: 0
+--- !u!114 &-4227013152480013505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774282574071248653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af3d2d958f8afb40babf9d57cc1a504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attributesToInitialize: {fileID: 11400000, guid: 2dbe098120af5ef47a55f8f60066fb71,
+    type: 2}
