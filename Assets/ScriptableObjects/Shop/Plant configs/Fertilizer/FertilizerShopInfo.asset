@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3030f0c2330ef6643ace0b91f3c062c9, type: 3}
-  m_Name: SunflowerShopInfo
+  m_Name: FertilizerShopInfo
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,8 +21,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  <Name>k__BackingField: 0
-  <Prefab>k__BackingField: {fileID: 299727695506437438, guid: 65781d5ce5ef284449ff91d8888e69f4,
+  <Name>k__BackingField: 5
+  <Prefab>k__BackingField: {fileID: 8952571161534687122, guid: 74185bdba746ea446be377c379ff99d0,
     type: 3}
-  <Cost>k__BackingField: {fileID: 11400000, guid: a886325f31cf6e743835c9a973521683,
+  <Cost>k__BackingField: {fileID: 11400000, guid: 12666b889e290514f923ad61f8b9b4a9,
     type: 2}

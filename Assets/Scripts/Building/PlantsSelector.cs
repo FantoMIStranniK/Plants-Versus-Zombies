@@ -7,12 +7,13 @@ namespace PVZ.Plants
 {
     public enum PlantName : sbyte
     {
-        Sunflower = 0,
-        Peashooter = 1,
-        Chillishooter = 2,
-        Mintshooter = 3,
-        Ivyshooter = 4,
-        Deconstruction = 5,
+        Sunflower,
+        Peashooter,
+        Chillishooter,
+        Mintshooter,
+        Ivyshooter,
+        Fertilizer,
+        Deconstruction,
     }
     public class PlantsSelector : SerializedMonoBehaviour, IInstance
     {
