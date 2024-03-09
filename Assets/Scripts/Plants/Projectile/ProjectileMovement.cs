@@ -1,39 +1,37 @@
-using Unity.Mathematics;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-public class ProjectileMovement : MonoBehaviour
+namespace PVZ.Plants
 {
-    [SerializeField] 
-    private float projectileSpeed = 5f;
-    [SerializeField] 
-    private float maxDistance = 100f;
-
-    private Rigidbody rb;
-
-    private float _spawnTime;
-
-    private void Awake()
+    [RequireComponent(typeof(Rigidbody))]
+    public class ProjectileMovement : MonoBehaviour
     {
-        rb = GetComponent<Rigidbody>();
+        [SerializeField]
+        private float projectileSpeed = 5f;
+        [SerializeField]
+        private float maxDistance = 100f;
 
-        _spawnTime = Time.time;
-    }
+        private float _spawnTime;
 
-    private void FixedUpdate()
-    {
-        MoveProjectile();
-    }
+        private void Awake()
+        {
+            _spawnTime = Time.time;
+        }
 
-    private void MoveProjectile()
-    {
-        float calculatedSpeed = Time.fixedDeltaTime * projectileSpeed;
+        private void FixedUpdate()
+        {
+            MoveProjectile();
+        }
 
-        var newPosition = Vector3.MoveTowards(transform.position, transform.position + transform.forward * maxDistance, calculatedSpeed);
+        private void MoveProjectile()
+        {
+            var normalizedDirection = transform.forward.normalized;
 
-        rb.MovePosition(newPosition);
+            var movement = normalizedDirection * projectileSpeed * Time.fixedDeltaTime;
 
-        if (Time.time - _spawnTime > maxDistance / projectileSpeed)
-            Destroy(gameObject);
+            transform.position += movement;
+
+            if (Time.fixedTime - _spawnTime > maxDistance / projectileSpeed)
+                Destroy(gameObject);
+        }
     }
 }
