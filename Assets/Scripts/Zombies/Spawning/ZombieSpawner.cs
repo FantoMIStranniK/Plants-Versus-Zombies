@@ -77,9 +77,12 @@ namespace PVZ.Zombies
 
         private void CreateZombie(WaveSegment waveSegment, Wave wave)
         {
-            var direction = quaternion.Euler(wave.FinishPoint.position - wave.SpawnPoint.position);
+            var direction = quaternion.Euler(new float3(0, (wave.FinishPoint.position - wave.SpawnPoint.position).y, 0));
 
-            var zombie = Instantiate(waveSegment.ZombieToSpawn, wave.SpawnPoint.position, direction);
+            var spawnPos = wave.SpawnPoint.position;
+            spawnPos.z += Random.Range(-0.3f, 0.3f);
+
+            var zombie = Instantiate(waveSegment.ZombieToSpawn, spawnPos, direction);
 
             var movement = zombie.GetComponent<ZombieMovement>();
 

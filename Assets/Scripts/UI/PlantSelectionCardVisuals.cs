@@ -13,22 +13,22 @@ namespace PVZ.UI
         public Color HoveredColor;
         public Color PressedColor;
 
-        internal static void HandleHover(Gesture.OnHover evt, PlantSelectionCardVisuals target)
+        public static void HandleHover(Gesture.OnHover evt, PlantSelectionCardVisuals target)
         {
             target.Panel.Color = target.HoveredColor;
         }
 
-        internal static void HandlePress(Gesture.OnPress evt, PlantSelectionCardVisuals target)
+        public static void HandlePress(Gesture.OnPress evt, PlantSelectionCardVisuals target)
         {
             target.Panel.Color = target.PressedColor;
         }
 
-        internal static void HandleRelease(Gesture.OnRelease evt, PlantSelectionCardVisuals target)
+        public static void HandleRelease(Gesture.OnRelease evt, PlantSelectionCardVisuals target)
         {
             target.Panel.Color = target.DefaultColor;
         }
 
-        internal static void HandleUnhover(Gesture.OnUnhover evt, PlantSelectionCardVisuals target)
+        public static void HandleUnhover(Gesture.OnUnhover evt, PlantSelectionCardVisuals target)
         {
             target.Panel.Color = target.DefaultColor;
         }

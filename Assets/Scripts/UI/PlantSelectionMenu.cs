@@ -8,10 +8,12 @@ namespace PVZ.UI
     public class PlantSelectionMenu : MonoBehaviour
     {
         public UIBlock Root = null;
+        public UIBlock PlantSelectionPanel = null;
 
         public ListView PlantCardsView = null;
 
         private IList<PlantShopInfoSO> PlantsList = null;
+
 
         private void Start()
         {
@@ -21,6 +23,9 @@ namespace PVZ.UI
             Root.AddGestureHandler<Gesture.OnUnhover, PlantSelectionCardVisuals>(PlantSelectionCardVisuals.HandleUnhover);
             Root.AddGestureHandler<Gesture.OnPress, PlantSelectionCardVisuals>(PlantSelectionCardVisuals.HandlePress);
             Root.AddGestureHandler<Gesture.OnRelease, PlantSelectionCardVisuals>(PlantSelectionCardVisuals.HandleRelease);
+
+            PlantSelectionPanel.AddGestureHandler<Gesture.OnHover, PlantSelectionMenuVisuals>(PlantSelectionMenuVisuals.HandleHover);
+            PlantSelectionPanel.AddGestureHandler<Gesture.OnUnhover, PlantSelectionMenuVisuals>(PlantSelectionMenuVisuals.HandleUnhover);
 
             PlantCardsView.AddGestureHandler<Gesture.OnClick, PlantSelectionCardVisuals>(PlantCardClicked);
 
